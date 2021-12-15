@@ -32,7 +32,6 @@ section {
 }
 
 .about-me-section {
-  clip-path: polygon(0 1%, 100% 0%, 100% 60%, 0% 100%);
   background: #fc7703;
 }
 
@@ -171,6 +170,7 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
   color: white;
   width: 450px;
   margin: 0 auto;
@@ -180,3 +180,26 @@ footer {
 .footer-socials span a {
   color: white;
 }
+
+@media only screen and (min-width: 900px) {
+  .about-me-section {
+    clip-path: polygon(0 1%, 100% 0%, 100% 60%, 0% 100%);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .intro-header {
+    font-size: 2rem;
+    margin: 0.6rem;
+  }
+
+  .about-me-info {
+    flex-wrap: wrap;
+  }
+
+  .project-section {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+a
